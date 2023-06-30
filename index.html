@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="stylesheet.css">
-</head>
-<body>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
     <div class="body-container">
-        <div class="heading">
-            <h3>Password Generator</h3>
+      <div class="heading">
+        <h3>Password Generator</h3>
+      </div>
+      <div class="pwoutput">
+        <h1>P4$5W0rD!</h1>
+      </div>
+      <div class="layout">
+        <div class="checks">
+        <label for="vol">Character Length</label>
+        <br />
+        <input type="range" id="vol" name="vol" min="0" max="10" />
+        <br />
+          <input type="checkbox" name="vehicle1" value="upper" /> Include
+          Uppercase Letters
+          <br />
+          <input type="checkbox" /> Include Lowercase Letters
+          <br />
+          <input type="checkbox" /> Include Numbers
+          <br />
+          <input type="checkbox" /> Include Symbols
         </div>
-        <div class="pwoutput">
-            <h1>P4$5W0rD!</h1>
-            
+        <br />
+
+        <div class="strength">
+          <p>STRENGTH</p>
         </div>
-        <div class="layout"></div>
+        <br />
+        <button>GENERATE</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
