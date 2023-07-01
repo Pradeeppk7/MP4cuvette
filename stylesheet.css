@@ -17,6 +17,7 @@ body {
   padding-top: 15vh;
 }
 .heading {
+  margin-bottom: 3vh;
   & h3 {
     color: #7e7c89;
     font-size: 19px;
@@ -30,16 +31,151 @@ body {
 
 .pwoutput {
   background: #24232b;
+  width: 480px;
+  height: 70px;
+  margin-bottom: 2vh;
+  & img {
+    height: 20px;
+    width: 18px;
+  }
+  & input[type='text'] {
+    color: #53525a;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.344px;
+  }
 }
 .layout {
   background: #24232b;
+  max-width: 480px;
+  height: 469px;
+  
+  & p {
+    padding: 2vh;
+    color: #fff;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.12px;
+  }
+  & span {
+    padding: 2vh;
+    color: #a4ffaf;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.232px;
+  }
 }
-.checks{
-    color: #FFF;
-font-size: 16px;
+.checks {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.432px;
+}
 
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: -0.432px;
+.passbox {
+  background-color: #24232b;
+  border: none;
+  outline: none;
+  padding: 1vh;
+}
+.row {
+  display: flex;
+  justify-content: flex-end;
+}
+.row p,
+.row input {
+  flex-basis: 100%;
+}
+.row input,
+.row img {
+  align-self: center;
+  padding: 2vh;
+}
+.slider {
+  display: flex;
+  & input[type='range'] {
+    width: 94%;
+    margin-left: 2vh;
+    border-radius: 0px 8px 8px 0px;
+    accent-color: #e6e5eb;
+    background-color: #0c0b10;
+  }
+}
+.checks input[type='checkbox'] {
+  accent-color: #a4ffaf;
+  border: 2px solid #fff;
+  background: #24232b;
+  height: 20px;
+  width: 20px;
+}
+
+.checks {
+  color: #fff;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.432px;
+}
+.gapch {
+  margin: 1.5vh;
+}
+.strength {
+  background-color: #0c0b10;
+  height: 60px;
+  display: flex;
+  margin-inline: 2vh;
+  padding-inline: 1vh;
+  align-items: center;
+  justify-content: space-between;
+  & p {
+    color: #82808e;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.12px;
+  }
+}
+.btn {
+  width: 455px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-inline: 2vh;
+  background: #a4ffaf;
+  color: #04210f;
+  font-size: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.339px;
+  border: none;
+  & img {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+.points {
+  height: 23px;
+  display: flex;
+  margin-inline: 1vh;
+  & .one,
+  .two,
+  .three,
+  .four {
+    height: 22px;
+    margin-right: 1vh;
+    width: 5px;
+    border: 2.1px solid #fff;
+  }
 }
